@@ -17,11 +17,12 @@
     Network Name: BSC Testnet<br>
     New RPC URL: https://data-seed-prebsc-1-s1.binance.org:8545/<br>
     Chain ID:97<br>
-    Currency Symbol和Block Explorer URL为选填项，可以不填
-  
-<br>
-<br>
-
+    Currency Symbol和Block Explorer URL为选填项，可以不填<br>
+ <br>
+   ![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%872.png)
+ <br>
+ 下面我们一起具体看一下操作流程<br>
+ 1.在BinanceIDE的首页点击左上角的Create Project
 
   
 
