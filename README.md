@@ -10,7 +10,9 @@
 <br>
   连接方法:<br>
   2.1 打开metamask小狐狸并选择自定义RPC选项<br>
+  <br>
   ![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%871.png)<br>
+  <br>
   2.2 输入内容如下:<br>
     Network Name: BSC Testnet<br>
     New RPC URL: https://data-seed-prebsc-1-s1.binance.org:8545/<br>
