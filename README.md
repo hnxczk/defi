@@ -15,7 +15,7 @@
 
 2.1 打开 metamask 小狐狸并选择自定义 RPC 选项<br>
 <br>
-![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%871.png)<br>
+![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B14.png)<br>
 <br>
 2.2 输入内容如下:<br>
 Network Name: BSC Testnet<br>
@@ -23,7 +23,7 @@ New RPC URL: https://data-seed-prebsc-1-s1.binance.org:8545/<br>
 Chain ID:97<br>
 Currency Symbol 和 Block Explorer URL 为选填项，可以不填<br>
 <br>
-![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%872.png)
+![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B15.png)
 <br>
 <br>
 
@@ -39,27 +39,24 @@ Currency Symbol 和 Block Explorer URL 为选填项，可以不填<br>
 <br> 4.点击 compile 之后可以在控制台看见编译结果<br>
 <br>
 ![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B6.png)<br>
-<br> 5.部署合约（设置 value 以及 gwei），这一步需要将三份编译好的合约分别部署，在 Compiled Contracts 当中首先部署 ChainToken 以及 RevenueToken，最后在部署 Farm 合约时传入前两个合约的地址(前两个合约的地址可以在output控制台中查看，例如"contractAddress":"0x79a377715E31D5F9eE736f8087aC0Ca230F8C48e")<br>
+<br> 5.部署合约（设置 value 以及 gwei），这一步需要将三份编译好的合约分别部署，在 Compiled Contracts 当中首先部署 ChainToken 以及 RevenueToken，最后在部署 Farm 合约时传入前两个合约的地址(前两个合约的地址可以在 output 控制台中查看，例如"contractAddress":"0x79a377715E31D5F9eE736f8087aC0Ca230F8C48e")<br>
 <br>
 ![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B7.png)<br>
 ![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B8.png)
 ![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B9.png)
-<br>
-6.在所有合约部署完成之后，由Farm合约实现数字货币的质押功能（stakeToken），这个方法的本质是调用了chainToken合约当中TransferFrom函数，将用户账户中的chaintoken转账到Farm合约当中，在此之前我们需要approve账户中拥有足够的数字货币。
+<br> 6.在所有合约部署完成之后，由 Farm 合约实现数字货币的质押功能（stakeToken），这个方法的本质是调用了 chainToken 合约当中 TransferFrom 函数，将用户账户中的 chaintoken 转账到 Farm 合约当中，在此之前我们需要 approve 账户中拥有足够的数字货币。
 <br>
 <br>
 ![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B10.jpg)
 <br>
 <br>
-7.Approve完成之后进行质押操作（填入想要质押的数量）
+7.Approve 完成之后进行质押操作（填入想要质押的数量）
 <br>
 ![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B11.png)
-<br>
-8.接下来把RevenueToken转移到Farm合约当中用于生成分红,参数传入Farm合约地址以及需要转移的数字货币数量
+<br> 8.接下来把 RevenueToken 转移到 Farm 合约当中用于生成分红,参数传入 Farm 合约地址以及需要转移的数字货币数量
 <br>
 ![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B11.png)
-<br>
-9.最后一步调用Farm合约中的issueToken函数为已经质押的用户生成分红
+<br> 9.最后一步调用 Farm 合约中的 issueToken 函数为已经质押的用户生成分红
 <br>
 ![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B13.png)
 <br>
