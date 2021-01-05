@@ -1,4 +1,4 @@
-# defi
+# Defi
 
 大家好，本次我们通过 ChainIDE 在 BSC 币安智能链上部署一个简单的 Defi 智能合约项目。<br>
 本次项目中包含了 2 种基于 ERC20 的代币，我们暂时把这两种代币称之为 ChainToken 以及 RevenueToken（之后简称为 CT 和 RT），CT 是用于模拟用户自身持有的数字货币，而 RT 是用户质押 CT 之后所获得的利息。整个 Defi 项目的工作流程是由一个 Farm 合约执行，用户将自己所持有的数字货币质押进 Farm 合约，合约按照用户质押的数量等比生成 RT 作为利息返还给用户。<br>
@@ -30,7 +30,7 @@ Currency Symbol 和 Block Explorer URL 为选填项，可以不填<br>
 ## 操作流程<br>
 
 1.点击 BinanceIDE 的首页中的 Defi Demo 案例<br>
-（配图）<br>
+![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B16.png)<br>
 <br> 2.在左侧的目录中我们已经准备好了上述的三份智能合约，其中 ChainToken 和 Revenue 是基于 ERC20 发行代币的智能合约，合约中声明了数字货币的名称，发行总量以及包含了验证、转账和第三方转账等方法。Farm 合约的代码实现了我们整体 defi 项目的运作逻辑，其中 stakeToken 方法是质押 CT 到此合约中，untakeTokens 是将质押的数字货币取出，issueToken 则是根据质押的 CT 生成 RT 利息。<br>
 ![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E6%95%99%E7%A8%8B%E5%9B%BE%E7%89%874.png)<br>
 <br> 3.下面我们将这三份合约部署到币安智能链上，首先在右上角选择编译器，0.5.x 的任意版本<br>
