@@ -58,7 +58,9 @@ Currency Symbol 和 Block Explorer URL 为选填项，可以不填<br>
 8.接下来把 RevenueToken 转移到 Farm 合约当中用于生成分红,参数传入 Farm 合约地址以及需要转移的数字货币数量
 <br>
 ![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B11.png)
-<br> 9.最后一步调用 Farm 合约中的 issueToken 函数为已经质押的用户生成分红
+<br> 
+<br>
+9.最后一步调用 Farm 合约中的 issueToken 函数为已经质押的用户生成分红
 <br>
 ![Image text](https://github.com/wkq1991zmc/defi/blob/master/%E5%9B%BE%E7%89%87%E6%95%99%E7%A8%8B13.png)
 <br>
